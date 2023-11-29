@@ -61,11 +61,11 @@ let str1 = new Promise((resolve, reject) => {
 });
 
 str1
-  .then((trimmedValue) => {
+  .then((beTarpuValue) => {
     // nuimti tarpelius
-    return trimmedValue.trim();
+    return beTarpuValue.trim();
   })
-  .then((uppercaseValue) => {
+  .then((didziosiosRaidesValue) => {
     //didziosios raides
-    console.log(uppercaseValue.toUpperCase());
+    console.log(didziosiosRaidesValue.toUpperCase());
   });
