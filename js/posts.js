@@ -52,3 +52,20 @@ const thirdPost = { title: "Post Three", body: "This is post Three body" };
 
 //promisify sprendimas
 createPost(thirdPost).then(getPosts);
+
+let str1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    let value = "   james   ";
+    resolve(value);
+  }, 500);
+});
+
+str1
+  .then((trimmedValue) => {
+    // nuimti tarpelius
+    return trimmedValue.trim();
+  })
+  .then((uppercaseValue) => {
+    //didziosios raides
+    console.log(uppercaseValue.toUpperCase());
+  });
